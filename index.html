@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Echo Net · Privacy Policy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0A0A0F;
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.5;
+            color: #F5F5F7;
+            padding: 2rem 1.5rem;
+        }
+
+        .container {
+            max-width: 780px;
+            margin: 0 auto;
+            background: transparent;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            background: linear-gradient(135deg, #FFFFFF 0%, #D0D0E0 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-bottom: 0.25rem;
+            line-height: 1.2;
+        }
+
+        .app-subtitle {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #B0B0C0;
+            margin-bottom: 1rem;
+            border-left: 3px solid #5AC8FA;
+            padding-left: 0.75rem;
+        }
+
+        .effective-meta {
+            margin: 1.25rem 0 1.75rem 0;
+            padding: 0.75rem 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            font-size: 0.9rem;
+            color: #A1A1B0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+            align-items: baseline;
+        }
+
+        .badge {
+            background: rgba(90, 200, 250, 0.18);
+            padding: 0.2rem 0.7rem;
+            border-radius: 30px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #5AC8FA;
+            display: inline-block;
+            letter-spacing: -0.2px;
+        }
+
+        .lang-switch {
+            display: flex;
+            gap: 0.5rem;
+            margin: 1.5rem 0 2rem 0;
+            padding: 0.3rem;
+            background: rgba(30, 30, 42, 0.6);
+            border-radius: 14px;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            width: fit-content;
+        }
+
+        .lang-switch button {
+            background: transparent;
+            border: none;
+            color: #A1A1B0;
+            padding: 0.5rem 1.1rem;
+            border-radius: 10px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-family: inherit;
+        }
+
+        .lang-switch button.active {
+            background: rgba(90, 200, 250, 0.22);
+            color: #FFFFFF;
+        }
+
+        .lang-switch button:hover:not(.active) {
+            color: #E2E2EC;
+        }
+
+        .lang-section {
+            display: none;
+        }
+
+        .lang-section.active {
+            display: block;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            font-weight: 620;
+            margin: 2rem 0 0.75rem 0;
+            color: #FFFFFF;
+            letter-spacing: -0.3px;
+            border-left: 4px solid #5AC8FA;
+            padding-left: 0.9rem;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            font-weight: 590;
+            margin: 1.4rem 0 0.5rem 0;
+            color: #E8E8F0;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            color: #E2E2EC;
+        }
+
+        .highlight-card {
+            background: rgba(30, 30, 42, 0.7);
+            border-radius: 20px;
+            padding: 1.25rem 1.5rem;
+            margin: 1.5rem 0;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(2px);
+        }
+
+        .highlight-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        ul {
+            margin: 0.75rem 0 1rem 1.5rem;
+            color: #E2E2EC;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            line-height: 1.45;
+        }
+
+        li strong {
+            color: #FFFFFF;
+            font-weight: 600;
+        }
+
+        .contact-line {
+            background: rgba(90, 200, 250, 0.10);
+            border-radius: 18px;
+            padding: 1rem 1.4rem;
+            margin: 1.8rem 0 1rem 0;
+            font-size: 1rem;
+            text-align: center;
+            border: 1px solid rgba(90, 200, 250, 0.22);
+        }
+
+        .contact-line a {
+            color: #5AC8FA;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px dotted rgba(90, 200, 250, 0.5);
+            transition: border 0.2s;
+        }
+
+        .contact-line a:hover {
+            border-bottom: 1px solid #5AC8FA;
+            color: #9BDCFC;
+        }
+
+        footer {
+            margin-top: 2.5rem;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #6F6F88;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        a {
+            color: #7DD3FC;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: #FFFFFF;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 550px) {
+            body {
+                padding: 1.2rem 1rem;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+            h2 {
+                font-size: 1.4rem;
+                padding-left: 0.7rem;
+            }
+            .effective-meta {
+                flex-direction: column;
+                gap: 0.4rem;
+            }
+            .highlight-card {
+                padding: 1rem 1.2rem;
+            }
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        strong {
+            color: #FFFFFF;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Privacy Policy</h1>
+    <div class="app-subtitle">Echo Net · Apple TV</div>
+    <div class="effective-meta">
+        <span>Effective date: June 2026</span>
+        <span class="badge">Version 1.0</span>
+        <span>Zero tracking</span>
+    </div>
+
+    <div class="lang-switch">
+        <button id="btn-en" class="active" onclick="switchLang('en')">English</button>
+        <button id="btn-ru" onclick="switchLang('ru')">Русский</button>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- ENGLISH VERSION -->
+    <!-- ============================================================ -->
+    <div id="lang-en" class="lang-section active">
+
+        <div class="highlight-card">
+            <p style="font-weight: 500; font-size: 1.05rem;"><strong>Echo Net does not collect, store, or share any of your personal data.</strong> Everything happens entirely on your device — there are no servers, no accounts, and no tracking of any kind.</p>
+        </div>
+
+        <h2>What Echo Net Is</h2>
+        <p>Echo Net is a VPN client for Apple TV. You add your own server configurations — WireGuard / AmneziaWG, or a proxy such as VLESS or SOCKS5 — and the app routes your traffic through them. Everything runs on your device. We have no accounts, no servers, and no backend of any kind.</p>
+
+        <h2>Summary</h2>
+        <ul>
+            <li><strong>All processing happens on your device.</strong> We do not collect, transmit, or store your data on any server.</li>
+            <li><strong>We don't have servers.</strong> Echo Net has no backend — there is nothing to sync and no account to create.</li>
+            <li><strong>No analytics, no ads, no trackers.</strong> The app does not track your activity and contains no third-party data-collection SDKs.</li>
+            <li><strong>Your traffic goes through the server you configured.</strong> It is never routed through us, and we never see it.</li>
+        </ul>
+
+        <h2>Data Stored on Your Device</h2>
+        <p>The servers you add — via QR code, paste, or manually — are saved only locally on your Apple TV, using Apple's standard on-device storage. This data is never transmitted anywhere and is accessible only to the app itself.</p>
+
+        <h2>Your Traffic</h2>
+        <p>While a connection is active, your network traffic goes through the server you configured. The app does not log, inspect, or transmit your traffic to us or any third party — all tunnel processing happens on your device.</p>
+
+        <h2>Data We Do Not Collect</h2>
+        <ul>
+            <li>No analytics or usage tracking (Google Analytics, Firebase, Mixpanel, etc.)</li>
+            <li>No crash reporting services</li>
+            <li>No advertising identifiers or ad networks</li>
+            <li>No traffic logs sent to us or any third party</li>
+            <li>No access to contacts, calendar, photos, or the microphone</li>
+            <li>No third-party SDKs that collect data</li>
+            <li>No accounts, no servers, no cloud synchronization</li>
+        </ul>
+
+        <h2>Device Access</h2>
+        <p>Echo Net may request the following permissions, all used only on your device:</p>
+        <ul>
+            <li><strong>Local Network</strong> — to import a server configuration from a nearby device, for example by scanning a QR code or receiving a config from your iPhone on the same Wi-Fi network.</li>
+            <li><strong>VPN Configuration</strong> — to create the network tunnel that routes your traffic through the server you configured. This is required for any VPN app to function.</li>
+        </ul>
+        <p>We do not request access to contacts, calendar, photos, the microphone, or any other personal data.</p>
+        <p>Distribution through the Apple App Store is subject to <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple's Privacy Policy</a>.</p>
+
+        <h2>Third Parties</h2>
+        <p>The app contains no third-party analytics or advertising SDKs. The servers you connect to are operated by you or your provider and are governed by their own policies.</p>
+
+        <h2>Children's Privacy</h2>
+        <p>Echo Net is not directed at children under 13 and does not knowingly collect personal data. Since the app does not collect data at all, it poses no privacy risks to children.</p>
+
+        <h2>Your Rights</h2>
+        <p>You have full control over your data at all times. You can delete any server in the app whenever you like. All data is stored only on your device, so to remove everything simply delete the app.</p>
+
+        <h2>Changes to This Policy</h2>
+        <p>If this Privacy Policy is updated, the new version will be posted at this URL with an updated effective date. Significant changes will be communicated through an app update notice.</p>
+
+        <h2>Contact</h2>
+        <p>Questions about this Privacy Policy? Reach us at:</p>
+        <div class="contact-line">
+            <strong><a href="mailto:g7979696@gmail.com">g7979696@gmail.com</a></strong>
+        </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- РУССКАЯ ВЕРСИЯ -->
+    <!-- ============================================================ -->
+    <div id="lang-ru" class="lang-section">
+
+        <div class="highlight-card">
+            <p style="font-weight: 500; font-size: 1.05rem;"><strong>Echo Net не собирает, не хранит и не передаёт никакие ваши персональные данные.</strong> Всё происходит исключительно на вашем устройстве — нет ни серверов, ни аккаунтов, ни какого-либо отслеживания.</p>
+        </div>
+
+        <h2>Что такое Echo Net</h2>
+        <p>Echo Net — это клиент VPN для Apple TV. Вы добавляете собственные конфигурации серверов — WireGuard / AmneziaWG или прокси, например VLESS или SOCKS5 — и приложение направляет ваш трафик через них. Всё работает на вашем устройстве. У нас нет аккаунтов, серверов и какого-либо бэкенда.</p>
+
+        <h2>Краткая суть</h2>
+        <ul>
+            <li><strong>Вся обработка происходит на вашем устройстве.</strong> Мы не собираем, не передаём и не храним ваши данные на каких-либо серверах.</li>
+            <li><strong>У нас нет серверов.</strong> У Echo Net нет бэкенда — нечего синхронизировать и не нужно создавать аккаунт.</li>
+            <li><strong>Нет аналитики, нет рекламы, нет трекеров.</strong> Приложение не отслеживает ваши действия и не содержит сторонних SDK для сбора данных.</li>
+            <li><strong>Ваш трафик идёт через сервер, который настроили вы.</strong> Он никогда не проходит через нас, и мы его не видим.</li>
+        </ul>
+
+        <h2>Что хранится на устройстве</h2>
+        <p>Серверы, которые вы добавляете — по QR-коду, вставкой или вручную — сохраняются только локально на вашем Apple TV через стандартное локальное хранилище Apple. Эти данные никуда не передаются и доступны лишь самому приложению.</p>
+
+        <h2>Ваш трафик</h2>
+        <p>Когда соединение активно, сетевой трафик идёт через сервер, который настроили вы. Приложение не ведёт логи, не анализирует и не передаёт ваш трафик ни нам, ни третьим лицам — вся обработка туннеля происходит на устройстве.</p>
+
+        <h2>Какие данные мы не собираем</h2>
+        <ul>
+            <li>Никакой аналитики или трекинга использования (Google Analytics, Firebase, Mixpanel и т.п.)</li>
+            <li>Никаких сторонних сервисов для отчётов о падениях</li>
+            <li>Никаких рекламных идентификаторов и рекламных сетей</li>
+            <li>Никаких логов трафика, передаваемых нам или третьим лицам</li>
+            <li>Никакого доступа к контактам, календарю, фотографиям и микрофону</li>
+            <li>Никаких сторонних SDK, собирающих данные</li>
+            <li>Никаких аккаунтов, серверов и облачной синхронизации</li>
+        </ul>
+
+        <h2>Доступ к устройству</h2>
+        <p>Echo Net может запрашивать следующие разрешения, и все они используются только на вашем устройстве:</p>
+        <ul>
+            <li><strong>Локальная сеть</strong> — чтобы импортировать конфигурацию сервера с устройства рядом: например, при сканировании QR-кода или получении конфигурации с вашего iPhone в той же сети Wi-Fi.</li>
+            <li><strong>Конфигурация VPN</strong> — чтобы создать сетевой туннель, который направляет ваш трафик через настроенный вами сервер. Это необходимо для работы любого VPN-приложения.</li>
+        </ul>
+        <p>Мы не запрашиваем доступ к контактам, календарю, фотографиям, микрофону и другим персональным данным.</p>
+        <p>Распространение через Apple App Store подчиняется <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">политике приватности Apple</a>.</p>
+
+        <h2>Третьи стороны</h2>
+        <p>В приложении нет сторонних SDK аналитики или рекламы. Серверы, к которым вы подключаетесь, управляются вами или вашим провайдером и подчиняются их собственным правилам.</p>
+
+        <h2>Дети</h2>
+        <p>Echo Net не ориентирован на детей младше 13 лет и не собирает персональные данные сознательно. Поскольку приложение не собирает данные вообще, оно не представляет рисков для приватности детей.</p>
+
+        <h2>Ваши права</h2>
+        <p>Вы в любой момент имеете полный контроль над своими данными. Любой сервер можно удалить в приложении когда угодно. Все данные хранятся только на вашем устройстве, поэтому чтобы удалить всё — просто удалите приложение.</p>
+
+        <h2>Изменения политики</h2>
+        <p>Если политика будет обновлена, новая версия будет опубликована по этому же адресу с обновлённой датой вступления в силу. О существенных изменениях пользователи будут проинформированы через обновление приложения.</p>
+
+        <h2>Контакты</h2>
+        <p>Вопросы по политике конфиденциальности? Пишите нам:</p>
+        <div class="contact-line">
+            <strong><a href="mailto:g7979696@gmail.com">g7979696@gmail.com</a></strong>
+        </div>
+    </div>
+
+    <footer>
+        Echo Net · All rights reserved · 2026
+    </footer>
+</div>
+
+<script>
+    function switchLang(lang) {
+        document.getElementById('lang-en').classList.toggle('active', lang === 'en');
+        document.getElementById('lang-ru').classList.toggle('active', lang === 'ru');
+        document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+        document.getElementById('btn-ru').classList.toggle('active', lang === 'ru');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const browserLang = (navigator.language || 'en').toLowerCase();
+        if (browserLang.startsWith('ru')) {
+            switchLang('ru');
+        }
+    });
+</script>
+</body>
+</html>
