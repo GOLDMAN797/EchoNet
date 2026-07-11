@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Echo Net · Privacy Policy</title>
     <style>
@@ -42,7 +42,7 @@
             font-weight: 500;
             color: #B0B0C0;
             margin-bottom: 1rem;
-            border-left: 3px solid #5AC8FA;
+            border-left: 3px solid #3A6EA5;
             padding-left: 0.75rem;
         }
 
@@ -60,12 +60,12 @@
         }
 
         .badge {
-            background: rgba(90, 200, 250, 0.18);
+            background: rgba(58, 110, 165, 0.2);
             padding: 0.2rem 0.7rem;
             border-radius: 30px;
             font-size: 0.8rem;
             font-weight: 500;
-            color: #5AC8FA;
+            color: #8ABDF0;
             display: inline-block;
             letter-spacing: -0.2px;
         }
@@ -95,7 +95,7 @@
         }
 
         .lang-switch button.active {
-            background: rgba(90, 200, 250, 0.22);
+            background: rgba(58, 110, 165, 0.3);
             color: #FFFFFF;
         }
 
@@ -117,7 +117,7 @@
             margin: 2rem 0 0.75rem 0;
             color: #FFFFFF;
             letter-spacing: -0.3px;
-            border-left: 4px solid #5AC8FA;
+            border-left: 4px solid #3A6EA5;
             padding-left: 0.9rem;
         }
 
@@ -140,14 +140,14 @@
             padding: 1.25rem 1.5rem;
             margin: 1.5rem 0;
             border: 1px solid rgba(255, 255, 255, 0.08);
-            backdrop-filter: blur(2px);
+            backdrop-filter: blur(10px);
         }
 
         .highlight-card p:last-child {
             margin-bottom: 0;
         }
 
-        ul {
+        ul, .custom-list {
             margin: 0.75rem 0 1rem 1.5rem;
             color: #E2E2EC;
         }
@@ -162,27 +162,34 @@
             font-weight: 600;
         }
 
+        hr {
+            margin: 2rem 0;
+            border: none;
+            height: 1px;
+            background: linear-gradient(90deg, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.02) 100%);
+        }
+
         .contact-line {
-            background: rgba(90, 200, 250, 0.10);
+            background: rgba(58, 110, 165, 0.12);
             border-radius: 18px;
             padding: 1rem 1.4rem;
             margin: 1.8rem 0 1rem 0;
             font-size: 1rem;
             text-align: center;
-            border: 1px solid rgba(90, 200, 250, 0.22);
+            border: 1px solid rgba(138, 189, 240, 0.2);
         }
 
         .contact-line a {
-            color: #5AC8FA;
+            color: #8ABDF0;
             text-decoration: none;
             font-weight: 500;
-            border-bottom: 1px dotted rgba(90, 200, 250, 0.5);
+            border-bottom: 1px dotted rgba(138, 189, 240, 0.5);
             transition: border 0.2s;
         }
 
         .contact-line a:hover {
-            border-bottom: 1px solid #5AC8FA;
-            color: #9BDCFC;
+            border-bottom: 1px solid #8ABDF0;
+            color: #C0DFFF;
         }
 
         footer {
@@ -195,7 +202,7 @@
         }
 
         a {
-            color: #7DD3FC;
+            color: #B8D0F0;
             text-decoration: none;
             transition: color 0.2s ease;
         }
@@ -238,9 +245,9 @@
 <body>
 <div class="container">
     <h1>Privacy Policy</h1>
-    <div class="app-subtitle">Echo Net · Apple TV</div>
+    <div class="app-subtitle">Echo Net · App</div>
     <div class="effective-meta">
-        <span>Effective date: June 2026</span>
+        <span>Effective date: July 2026</span>
         <span class="badge">Version 1.0</span>
         <span>Zero tracking</span>
     </div>
@@ -250,128 +257,92 @@
         <button id="btn-ru" onclick="switchLang('ru')">Русский</button>
     </div>
 
-    <!-- ============================================================ -->
-    <!-- ENGLISH VERSION -->
-    <!-- ============================================================ -->
     <div id="lang-en" class="lang-section active">
 
         <div class="highlight-card">
-            <p style="font-weight: 500; font-size: 1.05rem;"><strong>Echo Net does not collect, store, or share any of your personal data.</strong> Everything happens entirely on your device — there are no servers, no accounts, and no tracking of any kind.</p>
+            <p style="font-weight: 500; font-size: 1.05rem;"><strong>Echo Net collects no data at all.</strong> There are no servers, no accounts, no analytics and no tracking. Everything you transfer travels directly between your devices inside your local network and never leaves it.</p>
         </div>
 
         <h2>What Echo Net Is</h2>
-        <p>Echo Net is a VPN client for Apple TV. You add your own server configurations — WireGuard / AmneziaWG, or a proxy such as VLESS or SOCKS5 — and the app routes your traffic through them. Everything runs on your device. We have no accounts, no servers, and no backend of any kind.</p>
+        <p>Echo Net is an app for iPhone, iPad, Mac and Windows that transfers files and text between your devices over your local network. Devices discover each other automatically, transfers are encrypted, and received text is placed straight into the clipboard. The app has no backend and no user accounts.</p>
 
         <h2>Summary</h2>
         <ul>
-            <li><strong>All processing happens on your device.</strong> We do not collect, transmit, or store your data on any server.</li>
-            <li><strong>We don't have servers.</strong> Echo Net has no backend — there is nothing to sync and no account to create.</li>
-            <li><strong>No analytics, no ads, no trackers.</strong> The app does not track your activity and contains no third-party data-collection SDKs.</li>
-            <li><strong>Your traffic goes through the server you configured.</strong> It is never routed through us, and we never see it.</li>
+            <li><strong>We collect nothing.</strong> The developer does not receive, store or share any information about you or the contents of your transfers.</li>
+            <li><strong>There are no servers.</strong> Files and text go directly from one of your devices to another over your local network.</li>
+            <li><strong>No analytics, no ads, no trackers.</strong> The app contains no third-party SDKs that collect data.</li>
+            <li><strong>Everything is encrypted.</strong> Every connection is protected with TLS, and device identity is verified with cryptographic keys generated on your devices.</li>
         </ul>
 
-        <h2>Data Stored on Your Device</h2>
-        <p>The servers you add — via QR code, paste, or manually — are saved only locally on your Apple TV, using Apple's standard on-device storage. This data is never transmitted anywhere and is accessible only to the app itself.</p>
+        <h2>How Transfers Work</h2>
+        <p>When you send a file or a text snippet, your device opens a direct encrypted connection to the receiving device on the same network and transfers the data. Nothing is uploaded to the internet, cached on external servers or shared with the developer.</p>
 
-        <h2>Your Traffic</h2>
-        <p>While a connection is active, your network traffic goes through the server you configured. The app does not log, inspect, or transmit your traffic to us or any third party — all tunnel processing happens on your device.</p>
+        <h2>Device Discovery</h2>
+        <p>To let your devices find each other, Echo Net announces the device name and a random service identifier on your local network using the standard Bonjour (DNS-SD) technology. This information is visible only to devices inside your network and is never sent to the internet.</p>
 
-        <h2>Data We Do Not Collect</h2>
-        <ul>
-            <li>No analytics or usage tracking (Google Analytics, Firebase, Mixpanel, etc.)</li>
-            <li>No crash reporting services</li>
-            <li>No advertising identifiers or ad networks</li>
-            <li>No traffic logs sent to us or any third party</li>
-            <li>No access to contacts, calendar, photos, or the microphone</li>
-            <li>No third-party SDKs that collect data</li>
-            <li>No accounts, no servers, no cloud synchronization</li>
-        </ul>
+        <h2>What Is Stored on Your Device</h2>
+        <p>The following is stored locally and only on your devices: the device name, app settings, the list of trusted devices, the device encryption key and the files you have accepted. All of it stays under your control and is removed when you delete the app or clear it in settings.</p>
 
         <h2>Device Access</h2>
-        <p>Echo Net may request the following permissions, all used only on your device:</p>
-        <ul>
-            <li><strong>Local Network</strong> — to import a server configuration from a nearby device, for example by scanning a QR code or receiving a config from your iPhone on the same Wi-Fi network.</li>
-            <li><strong>VPN Configuration</strong> — to create the network tunnel that routes your traffic through the server you configured. This is required for any VPN app to function.</li>
-        </ul>
-        <p>We do not request access to contacts, calendar, photos, the microphone, or any other personal data.</p>
-        <p>Distribution through the Apple App Store is subject to <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple's Privacy Policy</a>.</p>
-
-        <h2>Third Parties</h2>
-        <p>The app contains no third-party analytics or advertising SDKs. The servers you connect to are operated by you or your provider and are governed by their own policies.</p>
+        <p><strong>Local network.</strong> Required to discover your devices and transfer data between them. The app cannot work without it.</p>
+        <p><strong>Photos (iOS).</strong> Used only when you choose photos or videos to send. The app accesses only the items you pick.</p>
+        <p><strong>Notifications (Windows).</strong> Used to tell you about received files and text while the app runs in the background.</p>
 
         <h2>Children's Privacy</h2>
-        <p>Echo Net is not directed at children under 13 and does not knowingly collect personal data. Since the app does not collect data at all, it poses no privacy risks to children.</p>
+        <p>Echo Net does not collect data about anyone, including children.</p>
 
         <h2>Your Rights</h2>
-        <p>You have full control over your data at all times. You can delete any server in the app whenever you like. All data is stored only on your device, so to remove everything simply delete the app.</p>
+        <p>Since all data lives on your devices, you are always in control: remove trusted devices in settings, delete received files, or uninstall the app to erase everything it stored.</p>
 
         <h2>Changes to This Policy</h2>
-        <p>If this Privacy Policy is updated, the new version will be posted at this URL with an updated effective date. Significant changes will be communicated through an app update notice.</p>
+        <p>If this policy changes, the updated version will be published on this page with a new effective date.</p>
 
         <h2>Contact</h2>
-        <p>Questions about this Privacy Policy? Reach us at:</p>
+        <p>Questions about this privacy policy? Write to us:</p>
         <div class="contact-line">
             <strong><a href="mailto:g7979696@gmail.com">g7979696@gmail.com</a></strong>
         </div>
     </div>
 
-    <!-- ============================================================ -->
-    <!-- РУССКАЯ ВЕРСИЯ -->
-    <!-- ============================================================ -->
     <div id="lang-ru" class="lang-section">
 
         <div class="highlight-card">
-            <p style="font-weight: 500; font-size: 1.05rem;"><strong>Echo Net не собирает, не хранит и не передаёт никакие ваши персональные данные.</strong> Всё происходит исключительно на вашем устройстве — нет ни серверов, ни аккаунтов, ни какого-либо отслеживания.</p>
+            <p style="font-weight: 500; font-size: 1.05rem;"><strong>Echo Net не собирает никакие данные.</strong> У приложения нет серверов, аккаунтов, аналитики и трекинга. Всё, что вы передаёте, идёт напрямую между вашими устройствами внутри вашей локальной сети и никогда её не покидает.</p>
         </div>
 
         <h2>Что такое Echo Net</h2>
-        <p>Echo Net — это клиент VPN для Apple TV. Вы добавляете собственные конфигурации серверов — WireGuard / AmneziaWG или прокси, например VLESS или SOCKS5 — и приложение направляет ваш трафик через них. Всё работает на вашем устройстве. У нас нет аккаунтов, серверов и какого-либо бэкенда.</p>
+        <p>Echo Net — приложение для iPhone, iPad, Mac и Windows, которое передаёт файлы и текст между вашими устройствами по локальной сети. Устройства находят друг друга автоматически, передачи зашифрованы, а полученный текст сразу попадает в буфер обмена. У приложения нет бэкенда и аккаунтов.</p>
 
         <h2>Краткая суть</h2>
         <ul>
-            <li><strong>Вся обработка происходит на вашем устройстве.</strong> Мы не собираем, не передаём и не храним ваши данные на каких-либо серверах.</li>
-            <li><strong>У нас нет серверов.</strong> У Echo Net нет бэкенда — нечего синхронизировать и не нужно создавать аккаунт.</li>
-            <li><strong>Нет аналитики, нет рекламы, нет трекеров.</strong> Приложение не отслеживает ваши действия и не содержит сторонних SDK для сбора данных.</li>
-            <li><strong>Ваш трафик идёт через сервер, который настроили вы.</strong> Он никогда не проходит через нас, и мы его не видим.</li>
+            <li><strong>Мы не собираем ничего.</strong> Разработчик не получает, не хранит и не передаёт никакую информацию о вас или о содержимом ваших передач.</li>
+            <li><strong>Серверов нет.</strong> Файлы и текст идут напрямую с одного вашего устройства на другое по вашей локальной сети.</li>
+            <li><strong>Нет аналитики, рекламы и трекеров.</strong> В приложении нет сторонних SDK, собирающих данные.</li>
+            <li><strong>Всё зашифровано.</strong> Каждое соединение защищено TLS, а подлинность устройств проверяется криптографическими ключами, созданными на ваших устройствах.</li>
         </ul>
+
+        <h2>Как работает передача</h2>
+        <p>Когда вы отправляете файл или текст, ваше устройство открывает прямое зашифрованное соединение с принимающим устройством в той же сети и передаёт данные. Ничего не выгружается в интернет, не кешируется на внешних серверах и не передаётся разработчику.</p>
+
+        <h2>Обнаружение устройств</h2>
+        <p>Чтобы устройства находили друг друга, Echo Net объявляет в вашей локальной сети имя устройства и случайный служебный идентификатор по стандартной технологии Bonjour (DNS-SD). Эти сведения видны только устройствам внутри вашей сети и никогда не отправляются в интернет.</p>
 
         <h2>Что хранится на устройстве</h2>
-        <p>Серверы, которые вы добавляете — по QR-коду, вставкой или вручную — сохраняются только локально на вашем Apple TV через стандартное локальное хранилище Apple. Эти данные никуда не передаются и доступны лишь самому приложению.</p>
-
-        <h2>Ваш трафик</h2>
-        <p>Когда соединение активно, сетевой трафик идёт через сервер, который настроили вы. Приложение не ведёт логи, не анализирует и не передаёт ваш трафик ни нам, ни третьим лицам — вся обработка туннеля происходит на устройстве.</p>
-
-        <h2>Какие данные мы не собираем</h2>
-        <ul>
-            <li>Никакой аналитики или трекинга использования (Google Analytics, Firebase, Mixpanel и т.п.)</li>
-            <li>Никаких сторонних сервисов для отчётов о падениях</li>
-            <li>Никаких рекламных идентификаторов и рекламных сетей</li>
-            <li>Никаких логов трафика, передаваемых нам или третьим лицам</li>
-            <li>Никакого доступа к контактам, календарю, фотографиям и микрофону</li>
-            <li>Никаких сторонних SDK, собирающих данные</li>
-            <li>Никаких аккаунтов, серверов и облачной синхронизации</li>
-        </ul>
+        <p>Локально и только на ваших устройствах хранятся: имя устройства, настройки приложения, список доверенных устройств, ключ шифрования устройства и принятые вами файлы. Всё это под вашим контролем и удаляется вместе с приложением или через настройки.</p>
 
         <h2>Доступ к устройству</h2>
-        <p>Echo Net может запрашивать следующие разрешения, и все они используются только на вашем устройстве:</p>
-        <ul>
-            <li><strong>Локальная сеть</strong> — чтобы импортировать конфигурацию сервера с устройства рядом: например, при сканировании QR-кода или получении конфигурации с вашего iPhone в той же сети Wi-Fi.</li>
-            <li><strong>Конфигурация VPN</strong> — чтобы создать сетевой туннель, который направляет ваш трафик через настроенный вами сервер. Это необходимо для работы любого VPN-приложения.</li>
-        </ul>
-        <p>Мы не запрашиваем доступ к контактам, календарю, фотографиям, микрофону и другим персональным данным.</p>
-        <p>Распространение через Apple App Store подчиняется <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">политике приватности Apple</a>.</p>
-
-        <h2>Третьи стороны</h2>
-        <p>В приложении нет сторонних SDK аналитики или рекламы. Серверы, к которым вы подключаетесь, управляются вами или вашим провайдером и подчиняются их собственным правилам.</p>
+        <p><strong>Локальная сеть.</strong> Нужна для поиска ваших устройств и передачи данных между ними. Без неё приложение работать не может.</p>
+        <p><strong>Фото (iOS).</strong> Используется только когда вы выбираете фото или видео для отправки. Приложение получает доступ только к выбранным вами элементам.</p>
+        <p><strong>Уведомления (Windows).</strong> Используются, чтобы сообщать о полученных файлах и тексте, пока приложение работает в фоне.</p>
 
         <h2>Дети</h2>
-        <p>Echo Net не ориентирован на детей младше 13 лет и не собирает персональные данные сознательно. Поскольку приложение не собирает данные вообще, оно не представляет рисков для приватности детей.</p>
+        <p>Echo Net не собирает данные ни о ком, включая детей.</p>
 
         <h2>Ваши права</h2>
-        <p>Вы в любой момент имеете полный контроль над своими данными. Любой сервер можно удалить в приложении когда угодно. Все данные хранятся только на вашем устройстве, поэтому чтобы удалить всё — просто удалите приложение.</p>
+        <p>Поскольку все данные живут на ваших устройствах, контроль всегда у вас: удаляйте доверенные устройства в настройках, удаляйте принятые файлы или удалите приложение, чтобы стереть всё, что оно хранило.</p>
 
         <h2>Изменения политики</h2>
-        <p>Если политика будет обновлена, новая версия будет опубликована по этому же адресу с обновлённой датой вступления в силу. О существенных изменениях пользователи будут проинформированы через обновление приложения.</p>
+        <p>При изменении политики обновлённая версия будет опубликована на этой странице с новой датой вступления в силу.</p>
 
         <h2>Контакты</h2>
         <p>Вопросы по политике конфиденциальности? Пишите нам:</p>
@@ -401,5 +372,6 @@
         }
     });
 </script>
+
 </body>
 </html>
