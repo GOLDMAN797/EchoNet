@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Echo Net+ · Privacy Policy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0A0A0F;
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.5;
+            color: #F5F5F7;
+            padding: 2rem 1.5rem;
+        }
+
+        .container {
+            max-width: 780px;
+            margin: 0 auto;
+            background: transparent;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            background: linear-gradient(135deg, #FFFFFF 0%, #D0D0E0 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-bottom: 0.25rem;
+            line-height: 1.2;
+        }
+
+        .app-subtitle {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #B0B0C0;
+            margin-bottom: 1rem;
+            border-left: 3px solid #3A6EA5;
+            padding-left: 0.75rem;
+        }
+
+        .effective-meta {
+            margin: 1.25rem 0 1.75rem 0;
+            padding: 0.75rem 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            font-size: 0.9rem;
+            color: #A1A1B0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+            align-items: baseline;
+        }
+
+        .badge {
+            background: rgba(58, 110, 165, 0.2);
+            padding: 0.2rem 0.7rem;
+            border-radius: 30px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #8ABDF0;
+            display: inline-block;
+            letter-spacing: -0.2px;
+        }
+
+        .lang-switch {
+            display: flex;
+            gap: 0.5rem;
+            margin: 1.5rem 0 2rem 0;
+            padding: 0.3rem;
+            background: rgba(30, 30, 42, 0.6);
+            border-radius: 14px;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            width: fit-content;
+        }
+
+        .lang-switch button {
+            background: transparent;
+            border: none;
+            color: #A1A1B0;
+            padding: 0.5rem 1.1rem;
+            border-radius: 10px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-family: inherit;
+        }
+
+        .lang-switch button.active {
+            background: rgba(58, 110, 165, 0.3);
+            color: #FFFFFF;
+        }
+
+        .lang-switch button:hover:not(.active) {
+            color: #E2E2EC;
+        }
+
+        .lang-section {
+            display: none;
+        }
+
+        .lang-section.active {
+            display: block;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            font-weight: 620;
+            margin: 2rem 0 0.75rem 0;
+            color: #FFFFFF;
+            letter-spacing: -0.3px;
+            border-left: 4px solid #3A6EA5;
+            padding-left: 0.9rem;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            font-weight: 590;
+            margin: 1.4rem 0 0.5rem 0;
+            color: #E8E8F0;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            color: #E2E2EC;
+        }
+
+        .highlight-card {
+            background: rgba(30, 30, 42, 0.7);
+            border-radius: 20px;
+            padding: 1.25rem 1.5rem;
+            margin: 1.5rem 0;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(10px);
+        }
+
+        .highlight-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        ul, .custom-list {
+            margin: 0.75rem 0 1rem 1.5rem;
+            color: #E2E2EC;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            line-height: 1.45;
+        }
+
+        li strong {
+            color: #FFFFFF;
+            font-weight: 600;
+        }
+
+        hr {
+            margin: 2rem 0;
+            border: none;
+            height: 1px;
+            background: linear-gradient(90deg, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.02) 100%);
+        }
+
+        .contact-line {
+            background: rgba(58, 110, 165, 0.12);
+            border-radius: 18px;
+            padding: 1rem 1.4rem;
+            margin: 1.8rem 0 1rem 0;
+            font-size: 1rem;
+            text-align: center;
+            border: 1px solid rgba(138, 189, 240, 0.2);
+        }
+
+        .contact-line a {
+            color: #8ABDF0;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px dotted rgba(138, 189, 240, 0.5);
+            transition: border 0.2s;
+        }
+
+        .contact-line a:hover {
+            border-bottom: 1px solid #8ABDF0;
+            color: #C0DFFF;
+        }
+
+        footer {
+            margin-top: 2.5rem;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #6F6F88;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        a {
+            color: #B8D0F0;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: #FFFFFF;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 550px) {
+            body {
+                padding: 1.2rem 1rem;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+            h2 {
+                font-size: 1.4rem;
+                padding-left: 0.7rem;
+            }
+            .effective-meta {
+                flex-direction: column;
+                gap: 0.4rem;
+            }
+            .highlight-card {
+                padding: 1rem 1.2rem;
+            }
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        strong {
+            color: #FFFFFF;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Privacy Policy</h1>
+    <div class="app-subtitle">Echo Net+ · App</div>
+    <div class="effective-meta">
+        <span>Effective date: July 2026</span>
+        <span class="badge">Version 1.0</span>
+        <span>Zero tracking</span>
+    </div>
+
+    <div class="lang-switch">
+        <button id="btn-en" class="active" onclick="switchLang('en')">English</button>
+        <button id="btn-ru" onclick="switchLang('ru')">Русский</button>
+    </div>
+
+    <div id="lang-en" class="lang-section active">
+
+        <div class="highlight-card">
+            <p style="font-weight: 500; font-size: 1.05rem;"><strong>Echo Net+ collects no data at all.</strong> There are no servers, no accounts, no analytics and no tracking. Everything you transfer travels directly between your devices inside your local network and never leaves it.</p>
+        </div>
+
+        <h2>What Echo Net+ Is</h2>
+        <p>Echo Net+ is an app for iPhone, iPad, Mac and Windows that transfers files and text between your devices over your local network. Devices discover each other automatically, transfers are encrypted, and received text is placed straight into the clipboard. The app has no backend and no user accounts.</p>
+
+        <h2>Summary</h2>
+        <ul>
+            <li><strong>We collect nothing.</strong> The developer does not receive, store or share any information about you or the contents of your transfers.</li>
+            <li><strong>There are no servers.</strong> Files and text go directly from one of your devices to another over your local network.</li>
+            <li><strong>No analytics, no ads, no trackers.</strong> The app contains no third-party SDKs that collect data.</li>
+            <li><strong>Everything is encrypted.</strong> Every connection is protected with TLS, and device identity is verified with cryptographic keys generated on your devices.</li>
+        </ul>
+
+        <h2>How Transfers Work</h2>
+        <p>When you send a file or a text snippet, your device opens a direct encrypted connection to the receiving device on the same network and transfers the data. Nothing is uploaded to the internet, cached on external servers or shared with the developer.</p>
+
+        <h2>Device Discovery</h2>
+        <p>To let your devices find each other, Echo Net+ announces the device name and a random service identifier on your local network using the standard Bonjour (DNS-SD) technology. This information is visible only to devices inside your network and is never sent to the internet.</p>
+
+        <h2>What Is Stored on Your Device</h2>
+        <p>The following is stored locally and only on your devices: the device name, app settings, the list of trusted devices, the device encryption key and the files you have accepted. All of it stays under your control and is removed when you delete the app or clear it in settings.</p>
+
+        <h2>Device Access</h2>
+        <p><strong>Local network.</strong> Required to discover your devices and transfer data between them. The app cannot work without it.</p>
+        <p><strong>Photos (iOS).</strong> Used only when you choose photos or videos to send. The app accesses only the items you pick.</p>
+        <p><strong>Notifications (Windows).</strong> Used to tell you about received files and text while the app runs in the background.</p>
+
+        <h2>Children's Privacy</h2>
+        <p>Echo Net+ does not collect data about anyone, including children.</p>
+
+        <h2>Your Rights</h2>
+        <p>Since all data lives on your devices, you are always in control: remove trusted devices in settings, delete received files, or uninstall the app to erase everything it stored.</p>
+
+        <h2>Changes to This Policy</h2>
+        <p>If this policy changes, the updated version will be published on this page with a new effective date.</p>
+
+        <h2>Contact</h2>
+        <p>Questions about this privacy policy? Write to us:</p>
+        <div class="contact-line">
+            <strong><a href="mailto:g7979696@gmail.com">g7979696@gmail.com</a></strong>
+        </div>
+    </div>
+
+    <div id="lang-ru" class="lang-section">
+
+        <div class="highlight-card">
+            <p style="font-weight: 500; font-size: 1.05rem;"><strong>Echo Net+ не собирает никакие данные.</strong> У приложения нет серверов, аккаунтов, аналитики и трекинга. Всё, что вы передаёте, идёт напрямую между вашими устройствами внутри вашей локальной сети и никогда её не покидает.</p>
+        </div>
+
+        <h2>Что такое Echo Net+</h2>
+        <p>Echo Net+ — приложение для iPhone, iPad, Mac и Windows, которое передаёт файлы и текст между вашими устройствами по локальной сети. Устройства находят друг друга автоматически, передачи зашифрованы, а полученный текст сразу попадает в буфер обмена. У приложения нет бэкенда и аккаунтов.</p>
+
+        <h2>Краткая суть</h2>
+        <ul>
+            <li><strong>Мы не собираем ничего.</strong> Разработчик не получает, не хранит и не передаёт никакую информацию о вас или о содержимом ваших передач.</li>
+            <li><strong>Серверов нет.</strong> Файлы и текст идут напрямую с одного вашего устройства на другое по вашей локальной сети.</li>
+            <li><strong>Нет аналитики, рекламы и трекеров.</strong> В приложении нет сторонних SDK, собирающих данные.</li>
+            <li><strong>Всё зашифровано.</strong> Каждое соединение защищено TLS, а подлинность устройств проверяется криптографическими ключами, созданными на ваших устройствах.</li>
+        </ul>
+
+        <h2>Как работает передача</h2>
+        <p>Когда вы отправляете файл или текст, ваше устройство открывает прямое зашифрованное соединение с принимающим устройством в той же сети и передаёт данные. Ничего не выгружается в интернет, не кешируется на внешних серверах и не передаётся разработчику.</p>
+
+        <h2>Обнаружение устройств</h2>
+        <p>Чтобы устройства находили друг друга, Echo Net+ объявляет в вашей локальной сети имя устройства и случайный служебный идентификатор по стандартной технологии Bonjour (DNS-SD). Эти сведения видны только устройствам внутри вашей сети и никогда не отправляются в интернет.</p>
+
+        <h2>Что хранится на устройстве</h2>
+        <p>Локально и только на ваших устройствах хранятся: имя устройства, настройки приложения, список доверенных устройств, ключ шифрования устройства и принятые вами файлы. Всё это под вашим контролем и удаляется вместе с приложением или через настройки.</p>
+
+        <h2>Доступ к устройству</h2>
+        <p><strong>Локальная сеть.</strong> Нужна для поиска ваших устройств и передачи данных между ними. Без неё приложение работать не может.</p>
+        <p><strong>Фото (iOS).</strong> Используется только когда вы выбираете фото или видео для отправки. Приложение получает доступ только к выбранным вами элементам.</p>
+        <p><strong>Уведомления (Windows).</strong> Используются, чтобы сообщать о полученных файлах и тексте, пока приложение работает в фоне.</p>
+
+        <h2>Дети</h2>
+        <p>Echo Net+ не собирает данные ни о ком, включая детей.</p>
+
+        <h2>Ваши права</h2>
+        <p>Поскольку все данные живут на ваших устройствах, контроль всегда у вас: удаляйте доверенные устройства в настройках, удаляйте принятые файлы или удалите приложение, чтобы стереть всё, что оно хранило.</p>
+
+        <h2>Изменения политики</h2>
+        <p>При изменении политики обновлённая версия будет опубликована на этой странице с новой датой вступления в силу.</p>
+
+        <h2>Контакты</h2>
+        <p>Вопросы по политике конфиденциальности? Пишите нам:</p>
+        <div class="contact-line">
+            <strong><a href="mailto:g7979696@gmail.com">g7979696@gmail.com</a></strong>
+        </div>
+    </div>
+
+    <footer>
+        Echo Net+ · All rights reserved · 2026
+    </footer>
+</div>
+
+<script>
+    function switchLang(lang) {
+        document.getElementById('lang-en').classList.toggle('active', lang === 'en');
+        document.getElementById('lang-ru').classList.toggle('active', lang === 'ru');
+        document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+        document.getElementById('btn-ru').classList.toggle('active', lang === 'ru');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const browserLang = (navigator.language || 'en').toLowerCase();
+        if (browserLang.startsWith('ru')) {
+            switchLang('ru');
+        }
+    });
+</script>
+
+</body>
+</html>
