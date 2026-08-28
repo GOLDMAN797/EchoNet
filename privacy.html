@@ -2,259 +2,111 @@
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Echo Net+ · Privacy Policy</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg: #060608; --line: rgba(255,255,255,0.10); --line-soft: rgba(255,255,255,0.06);
+            --text: #EDEDF2; --dim: #9A9AA8; --faint: #5E5E6C; --accent: #8ABDF0; --active: #4ADE80;
+            --mono: "Manrope", -apple-system, "Segoe UI", sans-serif;
+            --sans: "Manrope", -apple-system, "Segoe UI", sans-serif;
         }
-
         body {
-            background-color: #0A0A0F;
-            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.5;
-            color: #F5F5F7;
-            padding: 2rem 1.5rem;
+            background-color: var(--bg);
+            background-image: radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1.6px);
+            background-size: 96px 96px; background-position: 48px 48px;
+            font-family: var(--sans); line-height: 1.6; color: var(--text);
+            padding: 2rem 1.5rem 4rem;
         }
-
-        .container {
-            max-width: 780px;
-            margin: 0 auto;
-            background: transparent;
-        }
-
-        h1 {
-            font-size: 2.2rem;
-            font-weight: 700;
-            letter-spacing: -0.01em;
-            background: linear-gradient(135deg, #FFFFFF 0%, #D0D0E0 100%);
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
-            margin-bottom: 0.25rem;
-            line-height: 1.2;
-        }
-
-        .app-subtitle {
-            font-size: 1.2rem;
-            font-weight: 500;
-            color: #B0B0C0;
-            margin-bottom: 1rem;
-            border-left: 3px solid #3A6EA5;
-            padding-left: 0.75rem;
-        }
-
-        .effective-meta {
-            margin: 1.25rem 0 1.75rem 0;
-            padding: 0.75rem 0;
-            border-top: 1px solid rgba(255, 255, 255, 0.08);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-            font-size: 0.9rem;
-            color: #A1A1B0;
-            display: flex;
+        .container { max-width: 780px; margin: 0 auto; }
+        .topbar {
+            display: flex; align-items: center; justify-content: space-between;
+            gap: 1rem; padding: 1.1rem 0 0.9rem; margin-bottom: 2.4rem;
+            border-bottom: 1px solid var(--line-soft);
+            font-family: var(--mono); font-size: 0.72rem;
+            letter-spacing: 0.08em; color: var(--faint);
             flex-wrap: wrap;
-            gap: 1.2rem;
-            align-items: baseline;
         }
-
-        .badge {
-            background: rgba(58, 110, 165, 0.2);
-            padding: 0.2rem 0.7rem;
-            border-radius: 30px;
-            font-size: 0.8rem;
-            font-weight: 500;
-            color: #8ABDF0;
-            display: inline-block;
-            letter-spacing: -0.2px;
+        .topbar .brand { display: flex; align-items: center; gap: 0.6rem; color: var(--dim); text-decoration: none; }
+        .topbar .brand:hover { color: var(--text); text-decoration: none; }
+        .topbar .brand img { width: 22px; height: 22px; border-radius: 6px; display: block; }
+        .topbar .meta { display: flex; gap: 1.4rem; flex-wrap: wrap; }
+        h1 { font-size: 2.3rem; font-weight: 700; letter-spacing: -0.02em; line-height: 1.1; margin-bottom: 0.5rem; }
+        .app-subtitle { font-family: var(--mono); font-size: 0.74rem; letter-spacing: 0.14em; color: var(--accent); margin-bottom: 1rem; }
+        .effective-meta {
+            margin: 1.2rem 0 1.6rem; padding: 0.7rem 0;
+            border-top: 1px solid var(--line-soft); border-bottom: 1px solid var(--line-soft);
+            font-family: var(--mono); font-size: 0.74rem; letter-spacing: 0.08em; color: var(--faint);
+            display: flex; flex-wrap: wrap; gap: 1.2rem; align-items: baseline;
         }
-
-        .lang-switch {
-            display: flex;
-            gap: 0.5rem;
-            margin: 1.5rem 0 2rem 0;
-            padding: 0.3rem;
-            background: rgba(30, 30, 42, 0.6);
-            border-radius: 14px;
-            border: 1px solid rgba(255, 255, 255, 0.06);
-            width: fit-content;
-        }
-
+        .badge { border: 1px solid var(--line); padding: 0.15rem 0.6rem; border-radius: 7px; color: var(--dim); }
+        .lang-switch { display: flex; gap: 0.2rem; }
         .lang-switch button {
-            background: transparent;
-            border: none;
-            color: #A1A1B0;
-            padding: 0.5rem 1.1rem;
-            border-radius: 10px;
-            font-size: 0.9rem;
-            font-weight: 500;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            font-family: inherit;
+            background: transparent; border: 1px solid transparent; color: var(--faint);
+            font-family: var(--mono); font-size: 0.74rem; letter-spacing: 0.08em;
+            padding: 0.3rem 0.7rem; border-radius: 7px; cursor: pointer;
+            transition: color 0.2s ease, border-color 0.2s ease;
         }
-
-        .lang-switch button.active {
-            background: rgba(58, 110, 165, 0.3);
-            color: #FFFFFF;
-        }
-
-        .lang-switch button:hover:not(.active) {
-            color: #E2E2EC;
-        }
-
-        .lang-section {
-            display: none;
-        }
-
-        .lang-section.active {
-            display: block;
-        }
-
+        .lang-switch button.active { color: var(--text); border-color: var(--line); }
+        .lang-switch button:hover:not(.active) { color: var(--dim); }
+        .lang-section { display: none; }
+        .lang-section.active { display: block; }
         h2 {
-            font-size: 1.6rem;
-            font-weight: 620;
-            margin: 2rem 0 0.75rem 0;
-            color: #FFFFFF;
-            letter-spacing: -0.3px;
-            border-left: 4px solid #3A6EA5;
-            padding-left: 0.9rem;
+            font-size: 1.1rem; font-weight: 650; letter-spacing: 0.01em;
+            margin: 2.1rem 0 0.65rem; padding-bottom: 0.45rem;
+            border-bottom: 1px solid var(--line-soft); color: var(--text);
         }
-
-        h3 {
-            font-size: 1.25rem;
-            font-weight: 590;
-            margin: 1.4rem 0 0.5rem 0;
-            color: #E8E8F0;
-        }
-
-        p {
-            margin-bottom: 1rem;
-            font-size: 1rem;
-            color: #E2E2EC;
-        }
-
+        p { font-size: 0.94rem; color: var(--dim); margin-bottom: 0.8rem; }
+        ul { margin: 0.4rem 0 1rem 1.1rem; }
+        li { font-size: 0.94rem; color: var(--dim); margin-bottom: 0.5rem; }
+        strong { color: var(--text); font-weight: 600; }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
         .highlight-card {
-            background: rgba(30, 30, 42, 0.7);
-            border-radius: 20px;
-            padding: 1.25rem 1.5rem;
-            margin: 1.5rem 0;
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            backdrop-filter: blur(10px);
+            border: 1px solid var(--line); border-radius: 14px;
+            background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0));
+            padding: 1.1rem 1.25rem; margin: 0 0 0.6rem;
         }
-
-        .highlight-card p:last-child {
-            margin-bottom: 0;
-        }
-
-        ul, .custom-list {
-            margin: 0.75rem 0 1rem 1.5rem;
-            color: #E2E2EC;
-        }
-
-        li {
-            margin-bottom: 0.5rem;
-            line-height: 1.45;
-        }
-
-        li strong {
-            color: #FFFFFF;
-            font-weight: 600;
-        }
-
-        hr {
-            margin: 2rem 0;
-            border: none;
-            height: 1px;
-            background: linear-gradient(90deg, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.02) 100%);
-        }
-
-        .contact-line {
-            background: rgba(58, 110, 165, 0.12);
-            border-radius: 18px;
-            padding: 1rem 1.4rem;
-            margin: 1.8rem 0 1rem 0;
-            font-size: 1rem;
-            text-align: center;
-            border: 1px solid rgba(138, 189, 240, 0.2);
-        }
-
-        .contact-line a {
-            color: #8ABDF0;
-            text-decoration: none;
-            font-weight: 500;
-            border-bottom: 1px dotted rgba(138, 189, 240, 0.5);
-            transition: border 0.2s;
-        }
-
-        .contact-line a:hover {
-            border-bottom: 1px solid #8ABDF0;
-            color: #C0DFFF;
-        }
-
+        .highlight-card p { color: var(--text); margin-bottom: 0; }
+        .contact-line { font-family: var(--mono); font-size: 0.9rem; margin-top: 0.3rem; }
         footer {
-            margin-top: 2.5rem;
-            text-align: center;
-            font-size: 0.8rem;
-            color: #6F6F88;
-            padding-top: 1rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            border-top: 1px solid var(--line-soft); margin-top: 2.8rem; padding-top: 1.4rem;
+            display: flex; flex-wrap: wrap; gap: 0.6rem 1.6rem; justify-content: center; text-align: center;
+            font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.06em; color: var(--faint);
         }
-
-        a {
-            color: #B8D0F0;
-            text-decoration: none;
-            transition: color 0.2s ease;
-        }
-
-        a:hover {
-            color: #FFFFFF;
-            text-decoration: underline;
-        }
-
-        @media (max-width: 550px) {
-            body {
-                padding: 1.2rem 1rem;
-            }
-            h1 {
-                font-size: 1.8rem;
-            }
-            h2 {
-                font-size: 1.4rem;
-                padding-left: 0.7rem;
-            }
-            .effective-meta {
-                flex-direction: column;
-                gap: 0.4rem;
-            }
-            .highlight-card {
-                padding: 1rem 1.2rem;
-            }
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        strong {
-            color: #FFFFFF;
-            font-weight: 600;
-        }
+        footer a { color: var(--dim); text-decoration: none; }
+        footer a:hover { color: var(--accent); text-decoration: none; }
+        @media (max-width: 560px) { h1 { font-size: 1.9rem; } .effective-meta { flex-direction: column; gap: 0.4rem; } }
     </style>
 </head>
 <body>
 <div class="container">
-    <h1>Privacy Policy</h1>
-    <div class="app-subtitle">Echo Net+ · App</div>
-    <div class="effective-meta">
-        <span>Effective date: July 2026</span>
-        <span class="badge">Version 1.0</span>
-        <span>Zero tracking</span>
+    <div class="topbar">
+        <a class="brand" href="index.html">
+            <img src="logo.png" alt="">
+            <span>ECHO&nbsp;NET+</span>
+        </a>
+        <div class="meta">
+            <span>LOCAL&nbsp;MESH&nbsp;·&nbsp;P2P</span>
+            <span>TLS&nbsp;1.3</span>
+            <span>2026</span>
+        </div>
+        <div class="lang-switch">
+            <button id="btn-en" class="active" onclick="switchLang('en')">EN</button>
+            <button id="btn-ru" onclick="switchLang('ru')">RU</button>
+        </div>
     </div>
 
-    <div class="lang-switch">
-        <button id="btn-en" class="active" onclick="switchLang('en')">English</button>
-        <button id="btn-ru" onclick="switchLang('ru')">Русский</button>
+    <h1>Privacy Policy</h1>
+    <div class="app-subtitle">02 — PRIVACY&nbsp;/&nbsp;КОНФИДЕНЦИАЛЬНОСТЬ</div>
+    <div class="effective-meta">
+        <span>EFFECTIVE: AUGUST 2026</span>
+        <span class="badge">V 1.1</span>
+        <span>ZERO&nbsp;TRACKING</span>
     </div>
 
     <div id="lang-en" class="lang-section active">
@@ -264,7 +116,7 @@
         </div>
 
         <h2>What Echo Net+ Is</h2>
-        <p>Echo Net+ is an app for iPhone, iPad, Mac and Windows that transfers files and text between your devices over your local network. Devices discover each other automatically, transfers are encrypted, and received text is placed straight into the clipboard. The app has no backend and no user accounts.</p>
+        <p>Echo Net+ is an app for iPhone, iPad, Mac, Windows and Linux that transfers files, text and chat messages between your devices over your local network. Devices discover each other automatically, transfers are encrypted, and received text is placed straight into the clipboard. The app has no backend and no user accounts.</p>
 
         <h2>Summary</h2>
         <ul>
@@ -278,15 +130,15 @@
         <p>When you send a file or a text snippet, your device opens a direct encrypted connection to the receiving device on the same network and transfers the data. Nothing is uploaded to the internet, cached on external servers or shared with the developer.</p>
 
         <h2>Device Discovery</h2>
-        <p>To let your devices find each other, Echo Net+ announces the device name and a random service identifier on your local network using the standard Bonjour (DNS-SD) technology. This information is visible only to devices inside your network and is never sent to the internet.</p>
+        <p>To let your devices find each other, Echo Net+ announces the device name and a random service identifier on your local network using the standard Bonjour/Avahi (DNS-SD) technology. This information is visible only to devices inside your network and is never sent to the internet.</p>
 
         <h2>What Is Stored on Your Device</h2>
-        <p>The following is stored locally and only on your devices: the device name, app settings, the list of trusted devices, the device encryption key and the files you have accepted. All of it stays under your control and is removed when you delete the app or clear it in settings.</p>
+        <p>The following is stored locally and only on your devices: the device name, app settings, the list of trusted devices, the device encryption key, the files you have accepted and your chat history with its attachments. All of it stays under your control and is removed when you delete the app or clear it in settings.</p>
 
         <h2>Device Access</h2>
         <p><strong>Local network.</strong> Required to discover your devices and transfer data between them. The app cannot work without it.</p>
         <p><strong>Photos (iOS).</strong> Used only when you choose photos or videos to send. The app accesses only the items you pick.</p>
-        <p><strong>Notifications (Windows).</strong> Used to tell you about received files and text while the app runs in the background.</p>
+        <p><strong>Notifications (Windows, Linux).</strong> Used to tell you about received files and text while the app runs in the background.</p>
 
         <h2>Children's Privacy</h2>
         <p>Echo Net+ does not collect data about anyone, including children.</p>
@@ -311,7 +163,7 @@
         </div>
 
         <h2>Что такое Echo Net+</h2>
-        <p>Echo Net+ — приложение для iPhone, iPad, Mac и Windows, которое передаёт файлы и текст между вашими устройствами по локальной сети. Устройства находят друг друга автоматически, передачи зашифрованы, а полученный текст сразу попадает в буфер обмена. У приложения нет бэкенда и аккаунтов.</p>
+        <p>Echo Net+ — приложение для iPhone, iPad, Mac, Windows и Linux, которое передаёт файлы, текст и сообщения чата между вашими устройствами по локальной сети. Устройства находят друг друга автоматически, передачи зашифрованы, а полученный текст сразу попадает в буфер обмена. У приложения нет бэкенда и аккаунтов.</p>
 
         <h2>Краткая суть</h2>
         <ul>
@@ -325,15 +177,15 @@
         <p>Когда вы отправляете файл или текст, ваше устройство открывает прямое зашифрованное соединение с принимающим устройством в той же сети и передаёт данные. Ничего не выгружается в интернет, не кешируется на внешних серверах и не передаётся разработчику.</p>
 
         <h2>Обнаружение устройств</h2>
-        <p>Чтобы устройства находили друг друга, Echo Net+ объявляет в вашей локальной сети имя устройства и случайный служебный идентификатор по стандартной технологии Bonjour (DNS-SD). Эти сведения видны только устройствам внутри вашей сети и никогда не отправляются в интернет.</p>
+        <p>Чтобы устройства находили друг друга, Echo Net+ объявляет в вашей локальной сети имя устройства и случайный служебный идентификатор по стандартной технологии Bonjour/Avahi (DNS-SD). Эти сведения видны только устройствам внутри вашей сети и никогда не отправляются в интернет.</p>
 
         <h2>Что хранится на устройстве</h2>
-        <p>Локально и только на ваших устройствах хранятся: имя устройства, настройки приложения, список доверенных устройств, ключ шифрования устройства и принятые вами файлы. Всё это под вашим контролем и удаляется вместе с приложением или через настройки.</p>
+        <p>Локально и только на ваших устройствах хранятся: имя устройства, настройки приложения, список доверенных устройств, ключ шифрования устройства, принятые вами файлы и история чата с вложениями. Всё это под вашим контролем и удаляется вместе с приложением или через настройки.</p>
 
         <h2>Доступ к устройству</h2>
         <p><strong>Локальная сеть.</strong> Нужна для поиска ваших устройств и передачи данных между ними. Без неё приложение работать не может.</p>
         <p><strong>Фото (iOS).</strong> Используется только когда вы выбираете фото или видео для отправки. Приложение получает доступ только к выбранным вами элементам.</p>
-        <p><strong>Уведомления (Windows).</strong> Используются, чтобы сообщать о полученных файлах и тексте, пока приложение работает в фоне.</p>
+        <p><strong>Уведомления (Windows, Linux).</strong> Используются, чтобы сообщать о полученных файлах и тексте, пока приложение работает в фоне.</p>
 
         <h2>Дети</h2>
         <p>Echo Net+ не собирает данные ни о ком, включая детей.</p>
@@ -352,7 +204,10 @@
     </div>
 
     <footer>
-        Echo Net+ · All rights reserved · 2026
+        <a href="index.html">←&nbsp;MAIN</a>
+        <a href="https://github.com/goldman797/EchoNet/releases">GITHUB</a>
+        <a href="mailto:g7979696@gmail.com">MAIL</a>
+        <span>©&nbsp;2026&nbsp;·&nbsp;ECHO&nbsp;NET+</span>
     </footer>
 </div>
 
