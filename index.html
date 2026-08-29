@@ -120,11 +120,11 @@
         /* ── матрица активности ───────────────────────────────────── */
         .matrix {
             border: 1px solid var(--line); border-radius: 14px;
-            contain: paint; transform: translateZ(0);
-            background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0));
+            overflow: hidden;
+            background: #0B0B0F;
             padding: 1.3rem; margin: 0 0 3.4rem;
         }
-        .matrix svg { width: 100%; height: auto; display: block; }
+        .matrix svg { display: block; margin: 0 auto; }
         .matrix .cipher {
             font-family: var(--mono); font-size: 0.66rem; font-weight: 500;
             color: var(--faint);
@@ -244,7 +244,7 @@
         </div>
 
         <div class="matrix">
-            <svg id="msvg" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- matrix-fix-3 --><svg id="msvg" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                 <g id="m"></g>
             </svg>
             <div class="cipher" id="cipher" aria-hidden="true"></div>
@@ -342,10 +342,16 @@
                 cols = Math.max(30, Math.floor((w + gap) / (size + gap)));
                 var W = cols * (size + gap) - gap;
                 var H = rows * (size + gap) - gap;
-                svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H);
-                svg.setAttribute('preserveAspectRatio', 'none');
+                var pad = 2;
+                svg.setAttribute('viewBox', (-pad) + ' ' + (-pad) + ' ' + (W + pad * 2) + ' ' + (H + pad * 2));
+                svg.removeAttribute('width');
+                svg.removeAttribute('height');
+                svg.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+                svg.style.display = 'block';
                 svg.style.width = '100%';
-                svg.style.height = (H / W * w) + 'px';
+                svg.style.height = 'auto';
+                svg.style.aspectRatio = (W + pad * 2) + ' / ' + (H + pad * 2);
+                svg.style.overflow = 'visible';
                 while (g.firstChild) g.removeChild(g.firstChild);
                 cells = []; base = []; packets = [];
                 for (var r = 0; r < rows; r++) {
@@ -446,6 +452,9 @@
             build();
             requestAnimationFrame(frame);
             setInterval(tick, 80);
+            if (document.fonts && document.fonts.ready) {
+                document.fonts.ready.then(function () { build(); });
+            }
         })();
     </script>
 </body>
